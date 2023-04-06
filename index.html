@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoxControl</title>
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="body-container">
+        <h1>🦊 FoxControl</h1>
+        <hr>
+
+        <h3><i class="fa fa-key fa-fw"></i> Authentication</h3>
+        <p>In order to control the device, enter the password your play partner gave you.</p>
+        <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="bg-dark text-white form-control" id="password" placeholder="Password">
+        </div>
+        <hr>
+
+        <h3><i class="fa fa-info fa-fw"></i> State</h3>
+        <div class="power-state-idle">Device is idle<br></div>
+        Target Speed: 0<br>
+        Actual Speed: 0
+        <hr>
+
+        <h3><i class="fa fa-sliders fa-fw"></i> Controls</h3>
+        <p>
+            Adjust the settings of your partners toy.<br>
+            If the state of the device is still updating, the controls will be inactive.
+        </p>
+        <div class="form-group">
+            <label for="speed" class="form-label">Speed</label>
+            <input type="range" class="form-range" id="speed" min="0" max="32">
+        </div>
+        <button type="button" class="btn btn-primary">Power On</button>
+        <button type="button" class="btn btn-primary">Power Off</button>
+        <button type="button" class="btn btn-secondary">Change Mode</button>
+        <hr>
+    </div>
+</body>
+</html>

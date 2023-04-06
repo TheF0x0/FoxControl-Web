@@ -1,0 +1,23 @@
+html {
+    background: #121212;
+    color: #FFFFFF;
+}
+
+html * {
+    background: #121212;
+    color: #FFFFFF;
+}
+
+.body-container {
+    padding-top: 32px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.power-state-idle {
+    color: #00FF44;
+}
+
+.power-state-active {
+    color: #FF4400;
+}
