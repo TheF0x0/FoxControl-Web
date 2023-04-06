@@ -18,3 +18,11 @@ html * {
 .page-title {
     font-family: 'Alkatra', cursive;
 }
+
+.power-state-idle {
+    color: #44FF00;
+}
+
+.power-state-active {
+    color: #FF4400;
+}

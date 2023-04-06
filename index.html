@@ -5,7 +5,7 @@
     <title>FoxControl</title>
     <link rel="icon" type="image/png" href="/images/icon.png">
     <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" defer></script>
     <!-- Dependencies -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +21,27 @@
         <hr>
         <!-- Authentication -->
         <h3><i class="fa fa-key fa-fw"></i> Authentication</h3>
-        <p>In order to control the device, enter the password your play partner gave you.</p>
-        <div class="form-group">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="bg-dark text-white form-control" id="password" placeholder="Password">
-        </div>
+        <p>
+            In order to control the device, enter the address of the gateway to connect to
+            and the password your play partner gave to you.
+        </p>
+        <form>
+            <div class="form-group">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="bg-dark text-white form-control" id="address" placeholder="Address" value="gateway.foxcontrol.app">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="bg-dark text-white form-control" id="password" placeholder="Password">
+            </div>
+        </form>
         <hr>
         <!-- State -->
         <h3><i class="fa fa-info fa-fw"></i> State</h3>
-            <div id="power-state"><b class="text-success">Device is idle</b></div>
-            <div id="target-speed">Target Speed: 0</div>
-            <div id="actual-speed">Actual Speed: 0</div>
+            <div id="power-state"><b>Device is n/a</b></div>
+            <div id="target-speed">Target Speed: n/a</div>
+            <div id="actual-speed">Actual Speed: n/a</div>
         <hr>
         <!-- Controls -->
         <h3><i class="fa fa-sliders fa-fw"></i> Controls</h3>
