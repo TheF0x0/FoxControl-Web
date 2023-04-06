@@ -5,7 +5,11 @@
     <title>FoxControl</title>
     <link rel="icon" type="image/png" href="/images/icon.png">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"></script>
     <!-- Dependencies -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -13,9 +17,9 @@
 </head>
 <body>
     <div class="body-container">
-        <h1>🦊 FoxControl</h1>
+        <h1 class="page-title"><img src="/images/icon.png" alt="Icon" width="48"> FoxControl</h1>
         <hr>
-
+        <!-- Authentication -->
         <h3><i class="fa fa-key fa-fw"></i> Authentication</h3>
         <p>In order to control the device, enter the password your play partner gave you.</p>
         <div class="form-group">
@@ -23,13 +27,13 @@
             <input type="password" class="bg-dark text-white form-control" id="password" placeholder="Password">
         </div>
         <hr>
-
+        <!-- State -->
         <h3><i class="fa fa-info fa-fw"></i> State</h3>
-        <div class="power-state-idle">Device is idle<br></div>
-        Target Speed: 0<br>
-        Actual Speed: 0
+            <div id="power-state"><b class="text-success">Device is idle</b></div>
+            <div id="target-speed">Target Speed: 0</div>
+            <div id="actual-speed">Actual Speed: 0</div>
         <hr>
-
+        <!-- Controls -->
         <h3><i class="fa fa-sliders fa-fw"></i> Controls</h3>
         <p>
             Adjust the settings of your partners toy.<br>
@@ -37,7 +41,7 @@
         </p>
         <div class="form-group">
             <label for="speed" class="form-label">Speed</label>
-            <input type="range" class="form-range" id="speed" min="0" max="32">
+            <input type="range" class="form-range" id="speed" min="0" max="32" value="0">
         </div>
         <button type="button" class="btn btn-primary">Power On</button>
         <button type="button" class="btn btn-primary">Power Off</button>
