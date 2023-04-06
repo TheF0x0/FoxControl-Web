@@ -1,7 +1,6 @@
 html {
     background: #121212;
     color: #FFFFFF;
-    font-family: 'Varela Round', sans-serif;
 }
 
 html * {
@@ -13,10 +12,6 @@ html * {
     padding-top: 32px;
     padding-left: 25%;
     padding-right: 25%;
-}
-
-.page-title {
-    font-family: 'Alkatra', cursive;
 }
 
 .power-state-idle {

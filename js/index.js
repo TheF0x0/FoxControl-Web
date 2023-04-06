@@ -6,6 +6,7 @@
 setInterval(update_page, 250)
 
 const get_address = () => document.getElementById('address').value
+const get_password = () => document.getElementById('password').value
 const make_address = (endpoint) => `https://${get_address()}/${endpoint}`
 
 async function make_request(method, endpoint, data) {
