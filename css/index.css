@@ -13,3 +13,42 @@ html * {
     padding-left: 25%;
     padding-right: 25%;
 }
+
+.about-container {
+    background: #202020;
+    border-radius: 12px;
+}
+
+.about-entry {
+    background: #202020;
+    color: #888888;
+}
+
+.about-entry * {
+    background: #202020;
+    color: #888888;
+}
+
+.about-entry a * {
+    color: #888888;
+    transition: color .25s;
+    text-decoration: none;
+}
+
+.about-entry a {
+    color: #888888;
+    transition: color .25s;
+    text-decoration: none;
+}
+
+.about-entry a:hover * {
+    color: #FF8800;
+    transition: color .125s;
+    text-decoration: none;
+}
+
+.about-entry a:hover {
+    color: #FF8800;
+    transition: color .125s;
+    text-decoration: none;
+}
